@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Date.css">
+    <title>Date Webpage</title>
+    
+</head>
+<body>
+<div class="container">
+<p id="date"></p>
+ 
+       <script>
+        // JavaScript to display the current date
+        const currentDate = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('date').innerText = currentDate.toLocaleDateString('en-US', options);
+    </script>
+
+
+
+
+    <div>
+        <h1>Fix Date</h1>
+        
+        
+<h2>✨Meeting Date💖</h2>
+        <form>
+            <label for="datepicker">Select a Date:</label>
+            <input type="date" id="datepicker" name="datepicker" required>
+<img
+          src="https://media.tenor.com/q1C0ADOzBEUAAAAj/down-pointing.gif"
+          alt="Cute animated illustration"
+        />
+
+           <div>
+            <button class="btn" type="submit">Submit</button>
+           </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
